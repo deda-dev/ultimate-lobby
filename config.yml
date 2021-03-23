@@ -1,0 +1,207 @@
+#use & for color codes
+#use %PREFIX% for prefix
+
+#Prefix
+Prefix: '&8[&eUltimate Lobby&8]'
+
+#Motd
+Motd:
+  firstline: '        &3Your &5Server &7- &dServer Network &7- &8[&91.8&7-&91.16&8]'
+  secondline: '                  &e&lNEW &8» &bLobby System &8» &bLobby'
+
+#Exp Level
+ExpLevel: 2021
+
+#Health
+Health: 6
+
+#JumpPad
+JumpPad:
+  enabled: true
+  blockTop:
+    material: GOLD_PLATE
+  blockBottom:
+    material: GOLD_BLOCK
+
+#Teleport height
+Height:
+  min: 0
+  max: 120
+
+#
+# Joining server
+#
+
+#Scoreboard
+
+#Enable/Disable scoreboard
+#set scoreboard title
+#use %PLAYER% for player-name
+#use %RANK% for player-rank
+#use %COINS% for coins-number
+#highest number on the top / lowest number on the bottom
+#copy number with score to add more
+Scoreboard:
+  enabled: true
+  title: '&bYour &dServer'
+  Scores:
+    8:
+      score: '&7Your Coins'
+    7:
+      score: '&6%COINS%'
+    6:
+      score: '&1'
+    5:
+      score: '&7Your Rank'
+    4:
+      score: '%RANK%'
+    3:
+      score: '&1&2'
+    2:
+      score: '&7Your Name'
+    1:
+      score: '&6%PLAYER%'
+
+#Join title
+
+#Enable/Disable Join title
+#set time to fadeIn (20 ticks are 1 second)
+#set time to stay (20 ticks are 1 second)
+#set time to fadeOut (20 ticks are 1 second)
+#set Join title
+#set Join subtitle
+#use %PLAYER% for player-name
+JoinTitle:
+  enabled: true
+  fadeIn: 20
+  stay: 60
+  fadeOut: 20
+  title: '&bWelcome'
+  subtitle: '&d%PLAYER%'
+
+#Enable/Disable Clear chat at join
+ClearChatAtJoin:
+  enabled: true
+
+#Tabtitle
+
+#Enable/Disable Header tab title
+#Enable/Disable Footer tab title
+#set Header tab title
+#set Footer tab title
+#use %PLAYER% for player-name
+#use \n for the next line
+TabTitle:
+  Header:
+    enabled: true
+    header: '&fWelcome &6%PLAYER% &fon our server'
+  Footer:
+    enabled: true
+    footer: '&8&lDiscord&f: ...\n&f&lWebsite&f: ...\n&9&lTwitter&f: ...'
+
+#Actionbar
+
+#Enable/Disable Actionbar
+#set Actionbar
+#set Delay between first, second and third message (20 ticks are 1 second)
+Actionbar:
+  enabled: true
+  firstActionbar: '&8&lDiscord&f: ...'
+  secondActionbar: '&f&lWebsite&f: ...'
+  thirdActionbar: '&9&lTwitter&f: ...'
+  delay: 600
+
+#Automessage
+
+#Enable/Disable Automessage
+#set Automessages
+#set Delay (20 ticks are 1 second)
+Automessage:
+  enabled: true
+  firstAutomessage: '&fJoin our &8&lDiscord&f: ...'
+  secondAutomessage: '&fJoin our &f&lWebsite&f: ...'
+  thirdAutomessage: '&fFollow on &9&lTwitter&f: ...'
+  delay: 2400
+
+#
+# Ranks / Groups
+#
+
+#TabList
+
+#set TabList player-rank prefix
+#set TabList player-rank permission
+#lowest number on the top / highest number on the bottom
+#dont use more than 16 character
+#copy number with prefix and perm to add more
+TabList:
+  1:
+    prefix: '&8[&dO&8] &d'
+    perm: 'lobby.owner'
+  2:
+    prefix: '&8[&4A&8] &4'
+    perm: 'lobby.admin'
+  3:
+    prefix: '&8[&cM&8] &c'
+    perm: 'lobby.mod'
+  4:
+    prefix: '&8[&9D&8] &9'
+    perm: 'lobby.dev'
+  5:
+    prefix: '&8[&aB&8] &a'
+    perm: 'lobby.builder'
+  6:
+    prefix: '&8[&eS&8] &e'
+    perm: 'lobby.sup'
+  7:
+    prefix: '&8[&6P&8] &6'
+    perm: 'lobby.premium'
+  8:
+    prefix: '&8[&7P&8] &7'
+    perm: ''
+
+#Chat
+
+#set Chat player-rank prefix
+#set Chat player-rank permission
+#use %PLAYER% for player-name
+#copy number with prefix and perm to add more
+Chat:
+  1:
+    prefix: '&8[&dOwner&8] &d%PLAYER% &8»&r'
+    perm: 'lobby.owner'
+  2:
+    prefix: '&8[&4Admin&8] &4%PLAYER% &8»&r'
+    perm: 'lobby.admin'
+  3:
+    prefix: '&8[&cMod&8] &c%PLAYER% &8»&r'
+    perm: 'lobby.mod'
+  4:
+    prefix: '&8[&9Dev&8] &9%PLAYER% &8»&r'
+    perm: 'lobby.dev'
+  5:
+    prefix: '&8[&aBuilder&8] &a%PLAYER% &8»&r'
+    perm: 'lobby.builder'
+  6:
+    prefix: '&8[&eSup&8] &e%PLAYER% &8»&r'
+    perm: 'lobby.sup'
+  7:
+    prefix: '&8[&6Premium&8] &6%PLAYER% &8»&r'
+    perm: 'lobby.premium'
+  8:
+    prefix: '&8[&7Player&8] &7%PLAYER% &8»&r'
+    perm: ''
+
+#
+# MESSAGES
+#
+
+#set message of no permissions
+NoPerms: '%PREFIX% &cNo permission!'
+
+#set message for wrong command
+#use %COMMAND% for right command
+WrongCommandMessage: '%PREFIX% &cSyntax! &7Use &6%COMMAND%&7.'
+
+#set message for player not online
+PlayerNotOnline: '%PREFIX% &7The specified player is not online.'

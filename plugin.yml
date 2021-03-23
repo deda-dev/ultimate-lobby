@@ -1,0 +1,23 @@
+name: UltimateLobby
+version: 1.0.2
+main: de.deda.lobby.main.Lobby
+author: deda
+
+commands:
+   gm:
+   vanish:
+     aliases: v
+   fly:
+   chatclear:
+     aliases: cc
+   chatlog:
+     aliases: cl
+   broadcast:
+     aliases: bc
+   coins:
+   setspawn:
+   spawn:
+   item:
+   ultimatelobby:
+     aliases: ul
+   
